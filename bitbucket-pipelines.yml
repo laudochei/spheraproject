@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: maven:3.6.1
+image: maven:3.3.9
 
 pipelines:
   default:
@@ -12,3 +12,17 @@ pipelines:
           - maven
         script: # Modify the commands below to build your repository.
           - mvn -B verify # -B batch mode makes Maven less verbose
+          - git push https://heroku:5f754928-7afe-4289-9d13-3bdd06945cf1@git.heroku.com/sphera.git master
+         
+        
+         
+         
+         
+
+
+
+
+
+
+
+
